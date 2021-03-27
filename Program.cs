@@ -6,12 +6,16 @@ namespace NumberGues
     {
         static void Main(string[] args)
         {
-            string name = "Jan Paweł 2 ";
-            string name2 = "Gwałci małe dzieci ";
-            int godzina = 2137;
 
+            string appName = "Zgadywanie liczby";
+            int appVersion = 1;
+            string appAuthor = "Oskar Przybysz";
 
-            Console.WriteLine(name + name2 + godzina);
+            Console.ForegroundColor = ConsoleColor.Magenta;
+
+            Console.WriteLine($"[{appName}] Wersja 0.{appVersion}, Author: {appAuthor}");
+
+            Console.ResetColor();
         }
     }
 }
